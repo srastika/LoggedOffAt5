@@ -1,9 +1,7 @@
 from rich.console import Console
-from rich.live import Live
 from rich import print
 from constants import weather_icons
 from rich import print
-from rich.style import Style
 
 # This method prints the full report of the weather
 def print_report(data):
