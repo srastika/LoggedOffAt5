@@ -14,5 +14,6 @@ weather_icons = {
     "dust": {"icon": "🌫️", "color": "white"},
     "sand": {"icon": "🌫️", "color": "white"},
     "ash": {"icon": "🌫️", "color": "white"},
-    "squall": {"icon": "💨", "color": "cyan"}
+    "squall": {"icon": "💨", "color": "cyan"},
+    "light rain": {"icon": "☔", "color": "pink"},
 }

@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv
 import requests
 from print_report import print_report
+from weather_next_few_days import get_forecast_next
 # fucntion to accept city name from user command line
 # also add error handling for invalid city
 
@@ -30,6 +31,8 @@ def get_weather(city_name):
         # getting data in the json format
         data = response.json()
         print_report(data)
+        print()
+        get_forecast_next(city_name, API_KEY)
     else:
         # showing the error message
         print("Error in the HTTP request")
