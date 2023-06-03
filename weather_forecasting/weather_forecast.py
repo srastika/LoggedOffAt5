@@ -50,19 +50,11 @@ def validate_argument():
     return city_name
 
 
-def get_city_name():
-    try:
-        city_name = sys.argv[1]
-        return city_name
-    except:
-        print("Invalid City Name")
-        sys.exit(1)
 
 
-# __main__ function that calls get_city_name()
+# __main__ function that calls validate_argument()
 # and prints the weather forecast for the city
 if __name__ == "__main__":
-    # city_name = get_city_name()
     city_name = validate_argument()
     get_weather(city_name)
 
