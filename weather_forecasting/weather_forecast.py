@@ -4,6 +4,7 @@ import re
 import os
 from dotenv import load_dotenv
 import requests
+from print_report import print_report
 # fucntion to accept city name from user command line
 # also add error handling for invalid city
 
@@ -19,21 +20,7 @@ API_KEY = os.getenv("API_KEY")
 def validate_city():
     """If we want to use pandas to analyse the city we can use this"""
     df = pd.read_csv("allCities/worldcities.csv")
-def print_report(data):
-    # getting the main dict block
-    main = data['main']
-    # getting temperature
-    temperature = main['temp']
-    # getting the humidity
-    humidity = main['humidity']
-    # getting the pressure
-    pressure = main['pressure']
-    # weather report
-    report = data['weather']
-    print(f"{city_name:-^30}")
-    print(f"Temperature: {int(float(temperature)-273.15)} C")
-    print(f"Pressure: {pressure}")
-    print(f"Weather Report: {report[0]['description']}")
+
 
 def get_weather(city_name):
     URL = BASE_URL + "q=" + city_name + "&appid=" + API_KEY
