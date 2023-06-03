@@ -19,7 +19,21 @@ API_KEY = os.getenv("API_KEY")
 def validate_city():
     """If we want to use pandas to analyse the city we can use this"""
     df = pd.read_csv("allCities/worldcities.csv")
-
+def print_report(data):
+    # getting the main dict block
+    main = data['main']
+    # getting temperature
+    temperature = main['temp']
+    # getting the humidity
+    humidity = main['humidity']
+    # getting the pressure
+    pressure = main['pressure']
+    # weather report
+    report = data['weather']
+    print(f"{city_name:-^30}")
+    print(f"Temperature: {int(float(temperature)-273.15)} C")
+    print(f"Pressure: {pressure}")
+    print(f"Weather Report: {report[0]['description']}")
 
 def get_weather(city_name):
     URL = BASE_URL + "q=" + city_name + "&appid=" + API_KEY
@@ -28,21 +42,7 @@ def get_weather(city_name):
     if response.status_code == 200:
         # getting data in the json format
         data = response.json()
-        # getting the main dict block
-        main = data['main']
-        # getting temperature
-        temperature = main['temp']
-        # getting the humidity
-        humidity = main['humidity']
-        # getting the pressure
-        pressure = main['pressure']
-        # weather report
-        report = data['weather']
-        print(f"{city_name:-^30}")
-        print(f"Temperature: {int(float(temperature)-273.15)} C")
-        print(f"Humidity: {humidity}")
-        print(f"Pressure: {pressure}")
-        print(f"Weather Report: {report[0]['description']}")
+        print_report(data)
     else:
         # showing the error message
         print("Error in the HTTP request")
@@ -78,5 +78,4 @@ if __name__ == "__main__":
     # city_name = get_city_name()
     city_name = validate_argument()
     get_weather(city_name)
-    # print("Weather Forecast for " + city_name +
-    #       " is Sunny")  # hardcoded for now
+
