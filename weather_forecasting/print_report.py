@@ -2,7 +2,7 @@ from rich.console import Console
 from rich import print
 from constants import weather_icons
 from rich import print
-
+from text_to_speech import speak
 # This method prints the full report of the weather
 def print_report(data):
     # getting the main dict block
@@ -29,6 +29,8 @@ def print_weather_description(description):
     if description.lower() in weather_icons.keys():
         color=weather_icons[description.lower()]["color"]
         print(f"Weather Report: [bold {color}]{description}[/bold {color}] {weather_icons[description.lower()]['icon']}")
+        #speak weather description
+        speak(f"Weather Report: {description}")
 
 def print_city_name(city_name):
     """This method prints the city name in a beautiful way"""
@@ -46,6 +48,8 @@ def print_city_name(city_name):
 
     # Print the larger city name
     console.print(f"[bold spring_green3]{larger_city_name:^30}[/bold spring_green3]")
+    #speak city name
+    speak(f"City Name: {city_name}")
 
 def print_temperature(temperature):
     """This method prints the temperature in a beautiful way"""
@@ -59,6 +63,8 @@ def print_temperature(temperature):
     else:
         color="red"
     print(f"Temperature: [bold {color}]{temperature}°C[/bold {color}]")
+    #speak temperature
+    speak(f"Temperature: {temperature}°C")
 
 #similar to the above create function for pressure
 def print_pressure(pressure):
@@ -73,3 +79,5 @@ def print_pressure(pressure):
     else:
         color="red"
     print(f"Pressure: [bold {color}]{pressure} hPa[/bold {color}]")
+    #speak pressure
+    speak(f"Pressure: {pressure} hPa")

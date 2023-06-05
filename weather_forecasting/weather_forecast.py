@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import requests
 from print_report import print_report
 from weather_next_few_days import get_forecast_next
+
 # fucntion to accept city name from user command line
 # also add error handling for invalid city
 

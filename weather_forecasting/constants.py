@@ -16,4 +16,6 @@ weather_icons = {
     "ash": {"icon": "🌫️", "color": "white"},
     "squall": {"icon": "💨", "color": "cyan"},
     "light rain": {"icon": "☔", "color": "pink"},
+    #moderate rain
+    "moderate rain": {"icon": "☂️", "color": "pink"},
 }
