@@ -19,3 +19,5 @@ weather_icons = {
     #moderate rain
     "moderate rain": {"icon": "☂️", "color": "pink"},
 }
+#set value of SPEAK to 1 to enable text to speech
+SPEAK=1

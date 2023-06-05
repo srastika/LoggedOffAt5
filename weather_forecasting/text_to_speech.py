@@ -1,5 +1,5 @@
 import pyttsx3
-SPEAK=1
+from constants import SPEAK
 #fucntion to convert text to speech
 def text_to_speech(text):
     engine = pyttsx3.init()
