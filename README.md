@@ -36,6 +36,7 @@ Fetch essential weather data such as temperature , humidity, pressure , and cond
 
 ## ⛓️ Proposed Solution <a name = "limitations"></a>
 
+#### Video Demo: [Click here to redirect](https://youtu.be/9Xotzs19QC8) 
 
 ### Workflow:
 
