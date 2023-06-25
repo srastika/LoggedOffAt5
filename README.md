@@ -6,7 +6,6 @@
 
 <div align="center">
 
-[![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)]([http://hackathon.url.com](https://www.techgig.com/codegladiators/github-copilot-hackathon?solve=1))
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 </div>
