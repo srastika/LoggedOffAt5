@@ -19,8 +19,8 @@
 
 ## 📝 Table of Contents
 
-- [Problem Statement](#problem_statement)
-- [Idea / Solution](#idea)
+- [Summary of Project](#problem_statement)
+- [Business Challenge /Use Cases](#idea)
 - [Dependencies / Limitations](#limitations)
 - [Future Scope](#future_scope)
 - [Setting up a local environment](#getting_started)
@@ -30,41 +30,52 @@
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
 
-## 🧐 Problem Statement <a name = "problem_statement"></a>
+## 🧐 Brief Summary of Project <a name = "problem_statement"></a>
+The Weather Forecasting Tool is a command-line application that allows users to retrieve the current weather forecast for a specific city. The tool leverages the OpenWeatherMap API to fetch weather data and uses Python for data parsing and error handling. With the assistance of GitHub Copilot, the project incorporates text-to-speech support to enhance accessibility.
 
-It is useful to design and follow a specific format when writing a problem statement. While there are several options
-for doing this, the following is a simple and straightforward template often used in Business Analysis to maintain
-focus on defining the problem.
+The application takes a city's name as input and sends a request to the OpenWeatherMap API to retrieve the weather data for that city. GitHub Copilot assists in generating code snippets and suggestions for making API calls, handling API responses, and parsing the returned data.
 
-- IDEAL: This section is used to describe the desired or “to be” state of the process or product. At large, this section
-  should illustrate what the expected environment would look like once the solution is implemented.
-- REALITY: This section is used to describe the current or “as is” state of the process or product.
-- CONSEQUENCES: This section is used to describe the impacts on the business if the problem is not fixed or improved upon.
-  This includes costs associated with loss of money, time, productivity, competitive advantage, and so forth.
+Once the weather data is obtained, the application parses it to extract relevant information such as temperature, humidity, wind speed, and weather conditions. This parsing is done with the help of GitHub Copilot, which provides suggestions and code snippets for efficient data extraction and manipulation.
 
-Following this format will result in a workable document that can be used to understand the problem and elicit
+To enhance accessibility, the Weather Forecasting Tool incorporates text-to-speech support. This feature allows users with visual impairments or those who prefer auditory information to listen to the weather forecast instead of reading it. GitHub Copilot assists in implementing the necessary code for text-to-speech functionality, including converting the weather forecast text to speech and playing it back to the user.
+
+Overall, this project showcases how GitHub Copilot can accelerate the development process by providing intelligent code suggestions and automating repetitive tasks. It demonstrates the integration of an external API, data parsing, error handling, and the implementation of text-to-speech support for better accessibility.
+![image](https://github.com/srastika/LoggedOffAt5/assets/55448003/b1d1befd-3714-4bdf-bfdc-79179cbca8b5)
+
 requirements that will lead to a winning solution.
 
-## 💡 Idea / Solution <a name = "idea"></a>
+## 💡 Business Challenge /Use Cases <a name = "idea"></a>
 
-This section is used to describe potential solutions.
+Provide a reliable and efficient weather forecasting tool within a command-line interface
+Text to speech support allowing users with visual impairments or those who prefer auditory information to listen to the forecast
+Clear and organized overview of the weather information. 
+Fetch essential weather data such as temperature , humidity, pressure , and conditions
+![image](https://github.com/srastika/LoggedOffAt5/assets/55448003/60817090-7977-4b62-bdee-aba3a9da4298)
 
-Once the ideal, reality, and consequences sections have been
-completed, and understood, it becomes easier to provide a solution for solving the problem.
 
-## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
+## ⛓️ Proposed Solution <a name = "limitations"></a>
 
-- What are the dependencies of your project?
-- Describe each limitation in detailed but concise terms
-- Explain why each limitation exists
-- Provide the reasons why each limitation could not be overcome using the method(s) chosen to acquire.
-- Assess the impact of each limitation in relation to the overall findings and conclusions of your project, and if
-  appropriate, describe how these limitations could point to the need for further research.
+### Workflow:
+
+- User enters the city name as input in the command line
+- Tool sends a request to the OpenWeatherMap API for weather data
+- API response is received and parsed using Python [GitHub Copilot suggestions made parsing and error handling easier]
+- Extracted weather information is displayed to the user in a user-friendly format
+- Text to speech support for the extracted weather information is also integrated within the tool
+
+### Tool Features:
+
+- Command-Line Interface
+- Current Weather Forecast
+- OpenWeatherMap API Integration: Leverages OpenWeatherMap API for weather data retrieval
+- Python Data Parsing: Parses the API response using Python for data extraction
+- GitHub Copilot Assistance: Utilizes GitHub Copilot for API usage, data parsing, and error handling
+
 
 ## 🚀 Future Scope <a name = "future_scope"></a>
 
-Write about what you could not develop during the course of the Hackathon; and about what your project can achieve
-in the future.
+- Multilingual and regional language support using azure services
+- Enhance User Interface: Consider building a graphical user interface (GUI) for broader user accessibility
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -95,26 +106,10 @@ And repeat
 until finished
 ```
 
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## ⛏️ Built With <a name = "tech_stack"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+- [@Harmanjit Singh](https://github.com/harmanjit14)
+- [@Harmanjit Singh](https://github.com/srastika)
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors)
-who participated in this project.
 
-## 🎉 Acknowledgments <a name = "acknowledgments"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
