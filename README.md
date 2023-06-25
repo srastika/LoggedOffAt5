@@ -33,7 +33,10 @@ Clear and organized overview of the weather information.
 Fetch essential weather data such as temperature , humidity, pressure , and conditions
 
 
+
+
 ## ⛓️ Proposed Solution <a name = "limitations"></a>
+
 
 ### Workflow:
 
@@ -42,6 +45,8 @@ Fetch essential weather data such as temperature , humidity, pressure , and cond
 - API response is received and parsed using Python [GitHub Copilot suggestions made parsing and error handling easier]
 - Extracted weather information is displayed to the user in a user-friendly format
 - Text to speech support for the extracted weather information is also integrated within the tool
+
+
 
 ### Tool Features:
 
@@ -52,26 +57,23 @@ Fetch essential weather data such as temperature , humidity, pressure , and cond
 - GitHub Copilot Assistance: Utilizes GitHub Copilot for API usage, data parsing, and error handling
 
 
+
 ## 🚀 Future Scope <a name = "future_scope"></a>
 
 - Multilingual and regional language support using azure services
 - Enhance User Interface: Consider building a graphical user interface (GUI) for broader user accessibility
 
+  
+
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
+- Clone the repository from GitHub.
+- Install the required dependencies. Example: ```pip install -r requirements.txt```
+- Create a free account on WeatherAPI.com and obtain an API key. Paste the API Key in the .env file. Example: Inside .env ```API_KEY=<your-api-key>```
+- Run the command-line tool and provide the name of the city for which you want to retrieve the weather forecast.
+- cd into the weather_forecasting folder ```cd weather_forecasting```
+- python weather_forecast.py <city-name> Example: ```python -m weather_forecast.py London```
 
 
 ## ✍️ Authors <a name = "authors"></a>
