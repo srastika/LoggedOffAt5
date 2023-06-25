@@ -110,6 +110,6 @@ until finished
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@Harmanjit Singh](https://github.com/harmanjit14)
-- [@Harmanjit Singh](https://github.com/srastika)
+- [@Srastika](https://github.com/srastika)
 
 
