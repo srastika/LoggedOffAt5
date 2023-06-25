@@ -6,29 +6,13 @@
 
 <div align="center">
 
-[![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)](http://hackathon.url.com)
+[![Hackathon](https://img.shields.io/badge/hackathon-name-orange.svg)]([http://hackathon.url.com](https://www.techgig.com/codegladiators/github-copilot-hackathon?solve=1))
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
-
-## 📝 Table of Contents
-
-- [Summary of Project](#problem_statement)
-- [Business Challenge /Use Cases](#idea)
-- [Dependencies / Limitations](#limitations)
-- [Future Scope](#future_scope)
-- [Setting up a local environment](#getting_started)
-- [Usage](#usage)
-- [Technology Stack](#tech_stack)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgments)
 
 ## 🧐 Brief Summary of Project <a name = "problem_statement"></a>
 The Weather Forecasting Tool is a command-line application that allows users to retrieve the current weather forecast for a specific city. The tool leverages the OpenWeatherMap API to fetch weather data and uses Python for data parsing and error handling. With the assistance of GitHub Copilot, the project incorporates text-to-speech support to enhance accessibility.
@@ -40,9 +24,6 @@ Once the weather data is obtained, the application parses it to extract relevant
 To enhance accessibility, the Weather Forecasting Tool incorporates text-to-speech support. This feature allows users with visual impairments or those who prefer auditory information to listen to the weather forecast instead of reading it. GitHub Copilot assists in implementing the necessary code for text-to-speech functionality, including converting the weather forecast text to speech and playing it back to the user.
 
 Overall, this project showcases how GitHub Copilot can accelerate the development process by providing intelligent code suggestions and automating repetitive tasks. It demonstrates the integration of an external API, data parsing, error handling, and the implementation of text-to-speech support for better accessibility.
-![image](https://github.com/srastika/LoggedOffAt5/assets/55448003/b1d1befd-3714-4bdf-bfdc-79179cbca8b5)
-
-requirements that will lead to a winning solution.
 
 ## 💡 Business Challenge /Use Cases <a name = "idea"></a>
 
@@ -50,7 +31,6 @@ Provide a reliable and efficient weather forecasting tool within a command-line 
 Text to speech support allowing users with visual impairments or those who prefer auditory information to listen to the forecast
 Clear and organized overview of the weather information. 
 Fetch essential weather data such as temperature , humidity, pressure , and conditions
-![image](https://github.com/srastika/LoggedOffAt5/assets/55448003/60817090-7977-4b62-bdee-aba3a9da4298)
 
 
 ## ⛓️ Proposed Solution <a name = "limitations"></a>
@@ -77,19 +57,6 @@ Fetch essential weather data such as temperature , humidity, pressure , and cond
 - Multilingual and regional language support using azure services
 - Enhance User Interface: Consider building a graphical user interface (GUI) for broader user accessibility
 
-## 🏁 Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development
-and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
@@ -110,6 +77,6 @@ until finished
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@Harmanjit Singh](https://github.com/harmanjit14)
-- [@Srastika](https://github.com/srastika)
+- [@Srastika Shetty](https://github.com/srastika)
 
 
