@@ -69,10 +69,10 @@ Fetch essential weather data such as temperature , humidity, pressure , and cond
 A step by step series of examples that tell you how to get a development env running.
 - Clone the repository from GitHub.
 - Install the required dependencies. Example: ```pip install -r requirements.txt```
-- Create a free account on WeatherAPI.com and obtain an API key. Paste the API Key in the .env file. Example: Inside .env ```API_KEY=<your-api-key>```
+- Create a free account on OpenWeatherMap and obtain an API key. Paste the API Key in the .env file. Example: Inside .env ```API_KEY=<your-api-key>```
 - Run the command-line tool and provide the name of the city for which you want to retrieve the weather forecast.
 - cd into the weather_forecasting folder ```cd weather_forecasting```
-- python weather_forecast.py <city-name> Example: ```python -m weather_forecast.py London```
+- python weather_forecast.py <city-name> Example: ```python weather_forecast.py London```
 
 
 ## ✍️ Authors <a name = "authors"></a>
